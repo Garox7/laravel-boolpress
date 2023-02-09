@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <router-link :to="{}" class="navbar-brand">Boolpress</router-link>
+            <router-link :to="{name: 'home'}" class="navbar-brand">Boolpress</router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -16,13 +16,13 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <router-link :to="{name: 'pageHome'}" class="nav-link active" aria-current="page">Home</router-link>
+                            <router-link :to="{name: 'home'}" class="nav-link active" aria-current="page">Home</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link :to="{name: 'pagePosts'}" class="nav-link active" aria-current="page">Posts</router-link>
+                            <router-link :to="{name: 'postIndex'}" class="nav-link active" aria-current="page">Posts</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link :to="{name: 'pageAbout'}" class="nav-link active" aria-current="page">About us</router-link>
+                            <router-link :to="{name: 'about'}" class="nav-link active" aria-current="page">About us</router-link>
                         </li>
                     </ul>
                     <form class="d-flex mt-3" role="search">
