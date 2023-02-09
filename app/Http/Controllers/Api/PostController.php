@@ -16,4 +16,14 @@ class PostController extends Controller
             'results' => $posts,
         ]);
     }
+
+    public function show(Post $post)
+   {
+      $post = Post::where('id', $post->id)->with(['category', 'tags'])->first();
+
+      return response()->json([
+         'success' => true,
+         'results' => $post,
+      ]);
+   }
 }
