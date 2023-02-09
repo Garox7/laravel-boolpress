@@ -1,6 +1,6 @@
 <template>
-    <div class="container py-5 my-5 px-4">
-        <h1>Sono la home</h1>
+    <div class="container py-5 my-5">
+        <h1>Pagina 404</h1>
     </div>
 </template>
 

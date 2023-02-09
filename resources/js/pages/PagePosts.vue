@@ -7,7 +7,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">{{ post.title }}</h5>
                         <p class="card-text flex-grow-1">{{ post.excerpt }}</p>
-                        <a href="#" class="btn btn-primary">Leggi il post</a>
+                        <router-link :to="{name: 'postsShow', params: {slug: post.slug}}" class="btn btn-primary">Leggi il Post</router-link>
                     </div>
                 </div>
             </div>
